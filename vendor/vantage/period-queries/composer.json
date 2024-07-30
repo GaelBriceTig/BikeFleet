@@ -1,0 +1,41 @@
+{
+    "name": "vantage/period-queries",
+    "description": "Query by overlapping and intersecting periods in Laravel",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "periods",
+        "dates",
+        "overlaps",
+        "intersects",
+        "eloquent",
+        "query"
+    ],
+    "authors": [
+        {
+            "name": "Jari Pekkala",
+            "email": "jari@vantage.fi"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vantage\\PeriodQueries\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.5",
+        "nesbot/carbon": "^1.36"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vantage\\PeriodQueries\\PeriodQueriesServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,45 @@
+## Bikes
+- ID
+- SerialNumber
+- FK_tradeMark
+- Type
+- LastMaintenance
+
+## TradeMarks
+- ID
+- Name
+
+## Role
+- ID
+- Name
+
+## User
+- ID
+- email
+- firstName
+- lastName
+- FK_role
+
+## Location
+- ID
+- FK_bike
+- FK_user
+- Start
+- End
+
+## Payment
+- ID
+- FK_user
+- FK_location
+
+## SubscriptionType
+- ID
+- Name
+- Duration
+- Price
+- Name
+
+## Subscriptions
+- ID
+- FK_user
+- FK_subscription
